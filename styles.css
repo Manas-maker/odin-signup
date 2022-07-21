@@ -33,3 +33,17 @@ form {
     bottom: 30px;
     background-color: rgba(128, 128, 128, 0.7);
 }
+
+icon, h1 {
+    display: inline;
+    height: 15vh;
+    width: 10vw;
+}
+
+.hero-header {
+    position: relative;
+    bottom: 1000px;
+    background-color: grey;
+    height: 15vh;
+}
+
