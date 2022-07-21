@@ -8,3 +8,9 @@
     font-style: normal;
 
 }
+
+.hero {
+    height: 100vh;
+    width: 37vw;
+    position: absolute;
+}
