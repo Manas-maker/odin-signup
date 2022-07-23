@@ -2,30 +2,48 @@
 
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: calc(100%-300px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .hero {
-    height: 100vh;
-    width: 37vw;
+    height: 100%;
+    width: 37%;
     position: absolute;
-    left: 0px;
-    top: 0px;
+}
+
+h1 {
+    font-family: 'norsebold' ;
+    font-size: 5rem;
+    padding: auto;
 }
 
 #hero_img {
-    height: inherit;
-    width: inherit;
+    height: 99%;
+    width: 100%;
 }
 
-form {
+.content {
     position:relative;
-    left: 37vw;
-    width: 63vw
+    left: 37%;
+    width: 63%;
+    height: 100%;
+    margin: 0;
+    padding: 12rem 0;
 }
 
 .image-credit {
@@ -34,16 +52,68 @@ form {
     background-color: rgba(128, 128, 128, 0.7);
 }
 
-icon, h1 {
+.icon, h1 {
     display: inline;
-    height: 15vh;
-    width: 10vw;
+    height: 12vh;
+    padding: 10px;
 }
 
 .hero-header {
     position: relative;
-    bottom: 1000px;
-    background-color: grey;
+    bottom: 500px;
+    background-color: rgba(128, 128, 128, 0.7);
     height: 15vh;
 }
 
+form {
+    background-color: white;
+}
+
+#inputs {
+    background-color: #f9fafb;
+    width: 100%;
+    border: none;
+    margin: inherit;
+    padding-left: 0;
+    box-shadow: 0px 1px 5px 0px;
+    display: inline-block;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-top: 0px;
+}
+
+form > *{
+    margin-left: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 25rem;
+}
+
+li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+label {
+
+    display: block;
+}
+
+input {
+    border: #E5E7EB solid 2px;
+}
+
+button {
+    background-color: #596D48;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 16px 24px;
+    font-size: large;
+    border: white solid 2px;
+}
