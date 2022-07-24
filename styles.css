@@ -107,13 +107,28 @@ label {
 
 input {
     border: #E5E7EB solid 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none !important;
 }
 
 button {
-    background-color: #596D48;
+    background-color: #c8a204;
     height: 3rem;
     border-radius: 10px;
     padding: 16px 24px;
     font-size: large;
     border: white solid 2px;
+}
+
+input:focus {
+    border: blue solid 2px;
+}
+
+input:not(:placeholder-shown):invalid, .pass-incorrect {
+    border: red 2px solid;
+}
+
+input:not(:placeholder-shown):valid {
+    border: green 2px solid;
 }
