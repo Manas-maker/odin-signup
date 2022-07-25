@@ -125,10 +125,7 @@ input:focus {
     border: blue solid 2px;
 }
 
-input:not(:placeholder-shown):invalid, .pass-incorrect {
-    border: red 2px solid;
-}
 
-input:not(:placeholder-shown):valid {
-    border: green 2px solid;
+input:not(:focus):not(:placeholder-shown):invalid, .incorrect {
+    border: red 2px solid;
 }
