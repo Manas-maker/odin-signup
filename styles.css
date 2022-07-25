@@ -126,6 +126,6 @@ input:focus {
 }
 
 
-input:not(:focus):not(:placeholder-shown):invalid, .incorrect {
+input:not(:focus):not(:placeholder-shown):invalid, .error {
     border: red 2px solid;
 }
